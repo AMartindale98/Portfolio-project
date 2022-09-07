@@ -1,0 +1,278 @@
+** start of undefined **
+
+<!
+need:
+-socials section. DONE
+-connect the a links to the sections they correspond with. DONE
+-some type of footer. idk maybe a fake copyright.
+!>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <heading>
+    <nav id="navbar">
+      <a class="nav-link"  href="#welcome-section">ABOUT ME</a>
+      <a class="nav-link" href="#project-link">PROJECTS</a>
+      <a class="nav-link" href="#Contact Me">CONTACT ME</a>
+    </nav>
+    <section id="welcome-section">
+      <h1>Ash Martindale</h1>
+      <h3><em>Freelance web developer</em></h3>
+      <div class="divider-1"></div>
+      <h4 class="h4">ABOUT ME</h4>
+      <p>Hi! I'm Ash. I'm an intermediate-level web developer. For some background information, I studied English and Spanish in college. With this strong language background, I had a feeling learning code would be a good choice for my pre-existing skillset. I have also always had an eye from design, which benefitted me when I was the Managing Editor at my college newspaper, The Quad. Feel free to check out my work below and connect with me on GitHub or LinkedIn!</p>
+      <div class="divider-2"></div>
+    </section>
+  </heading>
+  <body class="body">
+    <h4 class="portfolio-header" id="project-link">PROJECTS</h4>
+    <section class="project-grid">
+      <div id="projects">
+        <div class="project-tile"></div>
+        <a class="project-1" href="file:///C:/Users/am4976/OneDrive%20-%20Drexel%20University/Documents/survey-form.html">
+          <img class="project-image" src="https://drexel0-my.sharepoint.com/personal/am4976_drexel_edu/Documents/Documents/Survey%20Form%20Pic.png?Web=1">Survey Form</a>
+      </div>
+      <div id="projects">
+        <a class="project-2" href="file:///C:/Users/am4976/OneDrive%20-%20Drexel%20University/Documents/tribute-page.html">
+          <img class="project-image" src="https://drexel0-my.sharepoint.com/personal/am4976_drexel_edu/Documents/Documents/Tribute%20Page%20Pic%202.png?Web=1">Tribute Page</a>
+      </div>
+      <div id="projects">
+        <a class="project-3" href="file:///C:/Users/am4976/OneDrive%20-%20Drexel%20University/Documents/Technical-Documentation.html">
+          <img class="project-image" src="https://drexel0-my.sharepoint.com/personal/am4976_drexel_edu/Documents/Documents/Technical%20Documentation%20Page%20Pic.png?Web=1">Technical Documentation Page</a>
+      </div>
+      <div id="projects">
+        <a class="project-4" href="file:///C:/Users/am4976/OneDrive%20-%20Drexel%20University/Documents/Product-Landing-Page.html">
+          <img class="project-image" src="https://drexel0-my.sharepoint.com/personal/am4976_drexel_edu/Documents/Documents/Product%20Landing%20Page%20Pic.png?Web=1">Product Page</a>
+      </div>
+    </section>
+    <div class="divider-2"></div>
+    <section class="socials" id="Contact Me">
+      <h4>Connect with me!</h4>
+      <div class="grid-2">
+        <a id="profile-link" href="https://github.com/AMartindale98" target="_blank">
+          <img class="social-icon" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"><span class="text">Github</span></a>
+        <a id="profile-link" href="https://www.linkedin.com/in/ashley-martindale-635404242/" target="_blank">
+          <img class="social-icon" src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png"><span class="text">LinkedIn</span></a>
+      </div>
+    </section>
+    <div class="divider-3"></div>
+    <p>©Created by Ash Martindale</p>
+    <section class="footer">
+    </section>
+  </body>
+  <footer>
+  </footer>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+/*
+need:
+-a media query. probably wanna resize the grid.
+-spruce up the grid, make her cute.
+-some animation? maybe when you hover over the pics, they move or something. DONE?
+-definitely want some general hovers. i want nav bar hover and the color of the text changes. DONE.
+-hover color change for grid text as well. DONE.
+-icons for github and linkedin. as well as animations possibly. DONE.
+-would love for this whole thing to look like 100% better lmao. idk why she just looks unprofessional.
+*/
+
+*:not(.nav-link) {
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(250, 230, 250);
+  font-family: rockwell;
+  color: rgb(60, 60, 60);
+}
+
+#welcome-section {
+  padding-top: 100px;
+  line-height: 40px;
+  padding-bottom: 200px;
+}
+
+.divider-1 {
+ border-width: 0 0 2px 0;
+ border-image: linear-gradient(45deg, rgb(200, 75, 75), rgb(75, 75, 200));
+ border-image-slice: 1;
+ border-style: solid;
+  width: 200px;
+}
+
+.h4 {
+  padding-top: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px rgba(100, 0, 100, .4);
+}
+
+
+.divider-2 {
+   border-width: 0 0 2px 0;
+ border-image: linear-gradient(45deg, rgb(200, 75, 75), rgb(75, 75, 200));
+ border-image-slice: 1;
+ border-style: solid;
+  width: 650px;
+  padding-top: 100px;
+  text-align: center;
+}
+  
+
+#navbar {
+  position: fixed;
+  background: linear-gradient(
+    to right,
+    rgb(200, 75, 75), 
+    rgb(75, 75, 200));
+  width: 100vw;
+  height: 50px; 
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.nav-link:hover {
+  color: rgb(50, 0, 50);
+  font-weight: bold;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+.portfolio-header {
+  padding-bottom: 30px;
+}
+
+@keyframes project-image {
+  0% {font-size: 16px;}
+  50% {font-size: 20px; text-shadow: 2px 2px 5px rgb(160, 100, 160);}
+  100% {font-size: 16px;}
+}
+
+.project-image {
+ object-fit: cover;
+ height: 500px;
+ width: 500px;
+ display: block;
+ border-bottom: solid rgb(70, 0, 0) 3px;
+}
+
+#projects:hover {
+   animation-name: project-image;
+ animation-duration: 3s;
+ animation-iteration-count: infinite;
+ animation-timing-function: ease-in-out;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  gap: 50px;
+}
+
+#projects {
+  border: solid rgb(70, 0, 0) 3px;
+  background-color: rgba(200, 75, 75, 20%);
+}
+
+#projects:hover {
+  background-color: rgba(200, 100, 100, 50%);
+  font-weight: bold;
+}
+
+.project-1, .project-2, .project-3, .project-4 {
+ width: 500px;
+ text-decoration: none;
+ color: rgb(40, 40, 40);
+}
+
+.socials {
+  padding-top: 50px;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.social-icon:hover {
+  animation-name: social;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  padding-top: 50px;
+}
+
+#profile-link {
+  text-decoration: none;
+  color: rgb(60, 60, 60);
+}
+
+.text {
+  display: block;
+}
+
+@keyframes social {
+  0% {font-size: 16px;}
+  50% {margin-top: 10px;}
+  100% {font-size: 16px;}
+}
+
+#profile-link:hover {
+  color: rgb(150, 60, 60);
+  font-weight: bold;
+  animation-name: social;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+
+@media (prefers-reduced-motion: no-preference) { 
+  * {
+  scroll-behavior: smooth;
+}
+}
+
+.divider-3 {
+  border-width: 0 0 2px 0;
+ border-image: linear-gradient(45deg, rgb(200, 75, 75), rgb(75, 75, 200));
+ border-image-slice: 1;
+ border-style: solid;
+  width: 100vw;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+** end of undefined **
+
